@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+    background: linear-gradient(to right, #CCBA7C,#DE9B35, #413A27);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
+    
+}
+
+header{
+    height: auto;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    transition: top .4s ease;
+    
+}
+.headerNahoru{
+    top: 0px;
+}
+
+footer{
+    position: relative;
+    bottom: 0px;
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    
+    
+}
+nav a{
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: #5D79AE; 
+    
+}
+nav a:hover{
+    background-color: #413A27; 
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    transition: .5s;
+}
+nav a div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+p{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: #413A27;
+    
+}
+
+.content{
+    margin-top: 20px;
+    position: relative;
+    top: 0px;
+    transition: top .4s ease;
+}
+
+.contentNahoru{
+    top: 0px;
+}
+
+.menuIconDiv{
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.menuIcon{
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+    
+}
+
+/*MEDIA QUERIES*/
+
+@media  screen and (min-width: 1250px) { 
+    .menuIconDiv{
+        display: none;
+    }
+    
+}
+
+@media  screen and (max-width: 1249px) and (min-width: 700px) { 
+    .headerNahoru{
+        top: -100px;
+    }
+    .contentNahoru{
+        top: -100px;
+    }
+}
+
+@media  screen and (max-width: 699px) { 
+    nav{
+        flex-direction: column;
+        height: 500px;
+    }
+
+    nav a{
+        border: none;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    nav a:hover{
+        border: none;
+        padding-top: 1px;
+        padding-bottom: 1px;
+    }
+
+    .headerNahoru{
+        top: -500px;
+    }
+    .contentNahoru{
+        top: -500px;
+    }
+}
