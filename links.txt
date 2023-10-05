@@ -1,8 +1,16 @@
 Obrázky:
-https://www.bing.com/images/search?view=detailV2&ccid=wiAewVlC&id=EB584AE6DC9388C4F06DFC0038480C264E8600F3&thid=OIP.wiAewVlCUC4pUJTwqpdmpwHaHa&mediaurl=https%3a%2f%2forig00.deviantart.net%2faf63%2ff%2f2008%2f336%2fa%2fe%2fsteam_or_counterstrike_icon_by_audio90.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.c2201ec15942502e295094f0aa9766a7%3frik%3d8wCGTiYMSDgA%252fA%26pid%3dImgRaw%26r%3d0&exph=256&expw=256&q=CSGO+icon&simid=608047750544434714&FORM=IRPRST&ck=57834F44FA5FB47471DD385CD58C165E&selectedIndex=4&qft=+filterui%3alicense-L2_L3&ajaxhist=0&ajaxserp=0
 https://www.bing.com/images/search?view=detailV2&ccid=tQmL3J28&id=7CB666D39732D397B97B15544F363BD373C91378&thid=OIP.tQmL3J28pFPoRIHXj_RQhQHaHa&mediaurl=https%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2fthumb%2fb%2fb2%2fHamburger_icon.svg%2f1024px-Hamburger_icon.svg.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b5098bdc9dbca453e84481d78ff45085%3frik%3deBPJc9M7Nk9UFQ%26pid%3dImgRaw%26r%3d0&exph=1024&expw=1024&q=Hamburger+Menu+Icon+White&simid=608034354567259222&FORM=IRPRST&ck=66C05E962E638FE2D8EDC57DB4ACD5AC&selectedIndex=0&qft=+filterui%3alicense-L2_L3&ajaxhist=0&ajaxserp=0
 
 
 
 Další:
-https://www.color-hex.com/color-palette/22433
+https://www.aixploria.com/en/	AI exploration tool
+
+
+
+AIs:
+https://www.upscale.media/	photo upscale
+https://codeium.com/		code autocompletion
+https://www.fantoons.xyz/	comic book creation
+https://app.unboundml.com/	Creation of logos and stuff for businesses
+https://lexica.art/		AI for creating images
