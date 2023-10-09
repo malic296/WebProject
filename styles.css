@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+
+h1{
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
 body{
     margin: 0px;
-    background: linear-gradient(to right, #CCBA7C,#DE9B35, #413A27);
+    width: 100%;
+    background: linear-gradient(to right, #00736b 0%, black 5%, black 5%, black 95%, black 95%, #00736b 100%);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-x: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     
 }
+
 
 header{
     height: auto;
@@ -14,6 +27,19 @@ header{
     transition: top .4s ease;
     
 }
+
+.headerNadpis{
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: 99px;
+    border-bottom: 1px solid white;
+    font-family: 'Pixelify Sans', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .headerNahoru{
     top: 0px;
 }
@@ -27,6 +53,8 @@ nav{
     display: flex;
     height: 100px;
     width: 100%;
+    box-shadow: 0 0 15px 10px rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
     
     
 }
@@ -34,17 +62,14 @@ nav a{
     flex-grow: 1;
     height: 100%;
     width: 100%;
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-    background-color: #5D79AE; 
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    background-color: black; 
+    color: white;
     
 }
-nav a:hover{
-    background-color: #413A27; 
-    border-left: 1px solid transparent;
-    border-right: 1px solid transparent;
-    transition: .5s;
-}
+
+
 nav a div{
     height: 100%;
     width: 100%;
@@ -59,19 +84,20 @@ a{
     color: white;
 }
 
-p{
-    width: 100%;
-    height: 100%;
-    border: 1px solid black;
-    background-color: #413A27;
-    
-}
-
 .content{
+    padding-top: 20px;
+    padding-bottom: 20px;
     margin-top: 20px;
     position: relative;
     top: 0px;
+    width: 80%;
     transition: top .4s ease;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
 }
 
 .contentNahoru{
@@ -87,10 +113,17 @@ p{
 }
 
 .menuIcon{
-    height: 50px;
+    height: auto;
     width: 50px;
-    margin-top: 10px;
+    margin-top: 15px;
     
+}
+
+.hamburgerPart{
+    height: 5px;
+    background-color: white;
+    width: 100%;
+    margin-top: 10px;
 }
 
 /*MEDIA QUERIES*/
@@ -99,15 +132,31 @@ p{
     .menuIconDiv{
         display: none;
     }
+    nav a:hover{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        transition: .7s;
+        scale: 1.05;
+        border-radius: 5px;
+        
+    }
     
 }
 
 @media  screen and (max-width: 1249px) and (min-width: 700px) { 
     .headerNahoru{
-        top: -100px;
+        top: -200px;
     }
     .contentNahoru{
-        top: -100px;
+        top: -200px;
+    }
+    nav a:hover{
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        transition: .7s;
+        scale: 1.05;
+        border-radius: 5px;
+       
     }
 }
 
@@ -115,23 +164,24 @@ p{
     nav{
         flex-direction: column;
         height: 500px;
+        background-color: white;
     }
 
     nav a{
         border: none;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
-    }
-    nav a:hover{
-        border: none;
-        padding-top: 1px;
-        padding-bottom: 1px;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
     }
 
     .headerNahoru{
-        top: -500px;
+        top: -600px;
     }
     .contentNahoru{
-        top: -500px;
+        top: -600px;
+    }
+    nav a:hover{
+        transition: 1.5s;
+        transform: rotateY(360deg);
+
     }
 }
