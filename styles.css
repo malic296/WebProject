@@ -17,6 +17,14 @@ h1{
     opacity: 1;
 }
 
+.whiteHeaderUnderlineJS{
+    color: white;
+}
+
+.blackHeaderUnderlineJS{
+    color: black;
+}
+
 .sectionForScrollingEffect{
     display: flex;
     width: 100%;
