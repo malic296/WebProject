@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
 h1{
     padding: 0px;
@@ -33,6 +35,57 @@ h1{
     align-items: center;
     flex-direction: column;
     text-align: center;
+}
+
+.secondToLastContentDiv{
+    border-top: 1px solid white;
+}
+
+.contentDiv{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contentText{
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    flex-direction: column;
+
+}
+
+.contentText p{
+    padding: 10px;
+    margin: 0px;
+}
+
+.textRight{
+    text-align: right;
+}
+.textLeft{
+    text-align: left;
+}
+
+.contentPic{
+    display: flex;
+    width: 50%;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContent{
+    width: 300px;
+    height: auto;
+    box-shadow: 0 0 30px 5px rgba(0, 115, 107, 0.9);
+    
 }
 
 body{
@@ -95,7 +148,7 @@ nav a{
     border-right: 1px solid white;
     background-color: black; 
     color: white;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Orbitron', sans-serif;;
     
 }
 
@@ -174,7 +227,7 @@ a{
 }
 
 h3{
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 35px;
     text-decoration: underline;
 }
@@ -221,6 +274,13 @@ h3{
 
     h1{
         font-size: 40px;
+    }
+    .contentDiv{
+        flex-direction: column;
+    }
+
+    .contentText{
+        text-align: center;
     }
     
 }

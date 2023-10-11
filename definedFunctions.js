@@ -13,27 +13,25 @@ function posun(element) {
   }
   
 
-
-
-
-
-
 // Funkce pro zjištění, zda je element v viewportu
 function isElementInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
+  const rect = element.getBoundingClientRect();
+  const viewportHeight = (window.innerHeight || document.documentElement.clientHeight);
+  const elementHeight = rect.bottom - rect.top;
+
+  const visibilityThreshold = 0.3; // 30% výšky
+
+  return (
+      rect.top <= (viewportHeight - elementHeight * (1 - visibilityThreshold)) &&
+      rect.bottom >= elementHeight * (1 - visibilityThreshold)
+  );
 }
 
 function checkVisibility(){
     // Výběr kontrolovaných elementů
     const elementsToCheck = document.querySelectorAll('.sectionForScrollingEffect');
 
-    // Projde všechny vybrané elementy a zkontrolujte, zda jsou v viewportu
+    // Projde všechny vybrané elementy a zkontrolujte, zda jsou v viewportu aspoň ze 30%
     elementsToCheck.forEach((element) => {
       if (isElementInViewport(element)) {
         element.classList.add('opacityToOne'); 
