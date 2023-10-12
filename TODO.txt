@@ -1,0 +1,7 @@
+footer, tabulka, formulář, fotogalerie
+
+jméno, aktualizace, zmínka že to je projekt
+
+main
+
+media na tisk
