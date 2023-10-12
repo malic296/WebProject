@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
 
+main{
+    width: 80%;
+}
+
 h1{
     padding: 0px;
     margin: 0px;
@@ -186,7 +190,7 @@ a{
     margin-top: 25px;
     position: relative;
     top: 0px;
-    width: 80%;
+    width: 100%;
     transition: top .4s ease;
     background-color: black;
     color: white;
