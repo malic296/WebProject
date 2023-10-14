@@ -34,7 +34,6 @@ h1{
 .sectionForScrollingEffect{
     display: flex;
     width: 100%;
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -65,6 +64,10 @@ h1{
 
 }
 
+p, table{
+    font-family: 'Raleway', sans-serif;
+}
+
 .contentText p{
     padding: 10px;
     margin: 0px;
@@ -86,11 +89,13 @@ h1{
 }
 
 .imgContent{
-    width: 300px;
+    width: 100%;
+    max-width: 500px;
     height: auto;
     box-shadow: 0 0 30px 5px rgba(0, 115, 107, 0.9);
     
 }
+
 
 body{
     margin: 0px;
@@ -236,9 +241,202 @@ h3{
     text-decoration: underline;
 }
 
+a li h4{
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contentText ul{
+    padding-inline-start: 0px;
+    
+}
+a li{
+    list-style-type: none;
+    margin-bottom: 30px;
+}
+
+a li:hover{
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    
+}
+
+.listHelp li{
+    padding-right: 2em;
+    position: relative;
+    list-style-type: none;
+
+    
+}
+
+.listHelp li::before{
+    content: "•";
+    position: absolute;
+    right: 0;
+}
+
+/*Tabulka*/
+.contentTable{
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 30px 5px rgba(0, 115, 107, 0.9);
+}
+
+th{
+    border: black 1px solid;
+}
+table, td, tr{
+    border: 1px solid white;
+
+}
+table{
+    border-collapse: collapse;
+    width: 100%;
+
+}
+td, th{
+    padding: 15px;
+}
+
+th{
+    background-color: white;
+    color: black;
+}
+
+/*Formulář*/
+.contentForm{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    box-shadow: 0 0 30px 5px rgba(0, 115, 107, 0.9);
+    border-radius: 30px;
+}
+
+label{
+    font-size: 20px;
+    margin: 15px;
+}
+
+.formTextarea{
+    width: 90%;
+    min-width: 50%;
+    max-width: 70%;
+    min-height: 100px;
+    max-height: 250px;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    overflow-y: scroll;
+    border: 2px solid red;
+}
+
+.formTextarea:focus{
+    border: 2px solid green;
+    outline: none;
+}
+
+.formTextarea:valid{
+    border: 2px solid green;
+}
+
+.formTextarea:invalid{
+    border: 2px solid red;
+}
+
+.inputText{
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    width: 70%;
+    margin: 10px;
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid red;
+}
+
+.inputText:valid{
+    border-bottom: 2px solid green;
+}
+
+.inputText:invalid{
+    border-bottom: 2px solid red;
+}
+
+.inputText:focus{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid green;
+}
+
+.inputSubmit{
+    background-color: white;
+    border-radius: 0px;
+    color: black;
+    width: 100%;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    border: 1px solid black;
+    position: relative;
+}
+.submitBtnDiv{
+    width: 50%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputSubmit:hover{
+    background-color: black;
+    border: 25px black solid;
+    transition: .8s;
+}
+
+/*š dodělat*/
+
+.popUpEffectYes, .popUpEffectNo{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    color: white;
+    pointer-events: none;
+    z-index: -1;
+}
+
+
+form:invalid .inputSubmit:hover + .popUpEffectNo{
+    z-index: 1;
+}
+
+form:valid .inputSubmit:hover + .popUpEffectYes{
+    z-index: 2;
+}
+
+
 /*MEDIA QUERIES*/
 
-@media  screen and (min-width: 1250px) { 
+@media screen and (min-width: 1250px) { 
     .menuIconDiv{
         display: none;
     }
@@ -246,7 +444,7 @@ h3{
     
 }
 
-@media  screen and (max-width: 1249px) and (min-width: 700px) { 
+@media screen and (max-width: 1249px) and (min-width: 700px) { 
     .headerNahoru{
         top: -200px;
     }
@@ -256,7 +454,7 @@ h3{
     
 }
 
-@media  screen and (max-width: 699px) { 
+@media screen and (max-width: 699px) { 
     nav{
         flex-direction: column;
         height: 400px;
@@ -287,4 +485,29 @@ h3{
         text-align: center;
     }
     
+}
+
+@media print{
+    header{
+        display: none;
+    }
+
+    .opacityToZero{
+        opacity: initial;
+    }
+
+    .imgContent{
+        box-shadow: initial;
+    }
+
+    #sekce1{
+        display: none;
+    }
+    .contentTable{
+        box-shadow: none;
+    }
+
+    .formSection{
+        display: none;
+    }
 }

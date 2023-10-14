@@ -19,13 +19,14 @@ function isElementInViewport(element) {
   const viewportHeight = (window.innerHeight || document.documentElement.clientHeight);
   const elementHeight = rect.bottom - rect.top;
 
-  const visibilityThreshold = 0.3; // 30% výšky
+  const visibilityThreshold = 0.2; // 20% výšky
 
   return (
       rect.top <= (viewportHeight - elementHeight * (1 - visibilityThreshold)) &&
       rect.bottom >= elementHeight * (1 - visibilityThreshold)
   );
 }
+
 
 function checkVisibility(){
     // Výběr kontrolovaných elementů
@@ -46,7 +47,7 @@ window.addEventListener('scroll', checkVisibility);
 
 
 
-
+//Funkce pro problikávání nadpisu stránky pro hezčí efekt
 function typingEffect(){
   const element = document.querySelector(".JSHeaderUnderlineCaller");
   const curColor = (element).getAttribute("value");
@@ -63,3 +64,24 @@ function typingEffect(){
 }
 
 setInterval(typingEffect, 600);
+
+
+
+//Funkce pro kotvení hlavní stránky
+
+document.addEventListener("DOMContentLoaded", function() {
+  var odkazy = document.querySelectorAll("a.sekceLink[href^='#']");
+
+  odkazy.forEach(function(odkaz){
+    odkaz.addEventListener("click", function(e) {
+      e.preventDefault();
+
+      var cil = this.getAttribute("href");
+      var cilovaSekce = document.querySelector(cil);
+
+      if(cilovaSekce) {
+        cilovaSekce.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    });
+  });
+});

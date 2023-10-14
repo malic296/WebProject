@@ -33,9 +33,31 @@
 
     <main>
     <div class = "content" id="content">
-        <section class = "sectionForScrollingEffect opacityToZero">
+        <section class = "sectionForScrollingEffect opacityToZero" id="sekce1">
             <div class="contentHeader">
-                <h3>Co je Umělá Inteligence ?</h3>
+                <h3>Co najdeš na tomto webu?</h3>
+            </div>
+            
+            <div class="contentDiv">
+                <div class="contentText textLeft">
+                    <ul>
+                        <a href="#sekce2" class = "sekceLink"><li><h4>Co je umělá inteligence</h4></li></a>
+                        <a href="#sekce3" class = "sekceLink"><li><h4>Jak umělá inteligence funguje</h4></li></a>
+                        <a href="#sekce4" class = "sekceLink"><li><h4>Jaké benefity může přinést</h4></li></a>
+                        <a href="#sekce5" class = "sekceLink"><li><h4>Jaké může přinést hrozby</h4></li></a>
+                        <a href="#sekce6" class = "sekceLink"><li><h4>Pomoc umělé inteligence v běžném životě</h4></li></a>
+                        <a href="#sekce7" class = "sekceLink"><li><h4>Tabulka umělých inteligencí</h4></li></a>
+                       
+                    </ul>
+                </div>
+                <div class="contentPic">
+                    <img src="pictures/AIWebsite.jpg" alt="ukázka zdrojového kodu webové aplikace" class = "imgContent">
+                </div>
+            </div>
+        </section>
+        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv" id="sekce2">
+            <div class="contentHeader">
+                <h3>Co je umělá inteligence?</h3>
             </div>
             
             <div class="contentDiv">
@@ -50,9 +72,9 @@
             </div>
         </section>
         
-        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv">
+        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv"  id="sekce3">
             <div class="contentHeader">
-                <h3>Jak Umělá Inteligence Funguje ?</h3>
+                <h3>Jak umělá inteligence funguje?</h3>
             </div>
             
             <div class="contentDiv">
@@ -67,9 +89,9 @@
             </div>
         </section>
         
-        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv">
+        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv"  id="sekce4">
             <div class="contentHeader">
-                <h3>Jak Může Umělá Inteligence Změnit Budoucnost ?</h3>
+                <h3>Jak může umělá inteligence změnit budoucnost?</h3>
             </div>
             
             <div class="contentDiv">
@@ -84,9 +106,9 @@
             </div>
         </section>
 
-        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv">
+        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv"  id="sekce5">
             <div class="contentHeader">
-                <h3>Hrozby, Které Může Umělá Inteligence Přinést</h3>
+                <h3>Hrozby, které může umělá inteligence přinést</h3>
             </div>
             
             <div class="contentDiv">
@@ -102,17 +124,17 @@
           
         </section>  
         
-        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv">
+        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv"  id="sekce6">
             <div class="contentHeader">
-                <h3>S čím vám může umělá inteligence pomoct ?</h3>
+                <h3>S čím vám může umělá inteligence pomoct?</h3>
             </div>
             
             <div class="contentDiv">
                 <div class="contentPic">
                     <img src="pictures/AIHelp.jpg" alt="obrázek pro ztvárnění pomoci" class = "imgContent">
                 </div>
-                <div class="contentText textLeft">
-                    <ul>
+                <div class="contentText textRight">
+                    <ul class = "listHelp">
                         <li><h4>Fotografie a grafický design</h4></li>
                         <li><h4>Hudba a hudební doporučení</h4></li>
                         <li><h4>Domácí asistenti</h4></li>
@@ -122,6 +144,61 @@
                     
                 </div>
             </div>
+          
+        </section>
+
+        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv"  id="sekce7">
+            <div class="contentHeader">
+                <h3>Všestrannost umělé inteligence: Hlasoví asistenti</h3>
+                <p>Umělou inteligenci běžně využíváme, aniž bychom si to uvědomili, a může se nacházet dokonce i v našich osobních mobilních asistentech.</p>
+            </div>
+
+            <div class="contentTable">
+                <table>
+                    <tr><th>Název asistenta</th><th>Společnost</th><th>Rok vytvoření</th></tr>
+                    <tr><td>Siri</td><td>Apple</td><td>2011</td></tr>
+                    <tr><td>Cortana</td><td>Microsoft</td><td>2014</td></tr>
+                    <tr><td>Alexa</td><td>Amazon</td><td>2014</td></tr>
+                    <tr><td>Google Assistant</td><td>Google</td><td>2016</td></tr>
+                    <tr><td>Bixby</td><td>Samsung</td><td>2017</td></tr>
+                </table>
+            </div>
+            
+           
+          
+        </section>
+
+        <section class = "sectionForScrollingEffect opacityToZero secondToLastContentDiv formSection">
+            <div class="contentHeader">
+                <h3>Je něco co by na stránce mělo přibýt?</h3>
+                <p>Pokud máš návrh co by na stránce o umělé inteligenci nemělo chybět, vyplň krátký formulář.</p>
+            </div>
+
+            <div class="contentForm">
+                <form action="POST">
+                    <label for="uname">Jméno:</label>
+                    <input type="text" name="uname" placeholder="Jméno" class = "inputText" maxlength="50" required>
+
+                    <label for="lastname">Příjmení:</label>
+                    <input type="text" name="lastname" placeholder="Příjmení" class = "inputText" maxlength="50" required>
+
+                    <label for="lastname">E-mail:</label>
+                    <input type="text" name="email" placeholder="E-mail" class = "inputText" maxlength="50" required>
+
+                    <label for="asnwer">Co by jsi přidal na stránku ?</label>
+                    <textarea placeholder = "..." name = "answer" class = "formTextarea" maxlength = "300" cols="30" rows="10" required></textarea>
+                
+                    <div class="submitBtnDiv">
+                        <input type="submit" value="Odeslat" class = "inputSubmit">
+                        <p class="popUpEffectNo">&#10005;</p>
+                        <p class="popUpEffectYes">&#10004;</p>
+                    </div>
+                    
+
+                </form>
+            </div>
+            
+           
           
         </section>
     </div>

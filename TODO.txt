@@ -1,4 +1,4 @@
-footer, tabulka, formulář, fotogalerie
+footer, formulář, fotogalerie
 
 jméno, aktualizace, zmínka že to je projekt
 
