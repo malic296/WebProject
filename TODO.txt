@@ -1,7 +1,3 @@
-footer, formulář, fotogalerie
-
-jméno, aktualizace, zmínka že to je projekt
-
-main
+fotogalerie
 
 media na tisk

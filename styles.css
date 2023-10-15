@@ -42,6 +42,7 @@ h1{
 
 .secondToLastContentDiv{
     border-top: 1px solid white;
+    margin-top: 30px;
 }
 
 .contentDiv{
@@ -135,10 +136,7 @@ header{
     top: 0px;
 }
 
-footer{
-    position: relative;
-    bottom: 0px;
-}
+/*navigace*/
 
 nav{
     display: flex;
@@ -182,6 +180,42 @@ nav a div{
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+/*Obecné stylování*/
+
+footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    box-shadow: 0px -10px 12px 2px rgba(255, 255, 255, 0.8);
+    margin-top: 50px;
+    display: flex;
+    
+
+}
+
+.footerDiv{
+    display: flex;
+    flex-grow: 1;
+    padding: 30px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footerDiv1{
+    border-right: 1px solid white;
+    justify-content: flex-start;
+}
+.footerDiv2{
+    justify-content: center;
+}
+.footerDiv3{
+    border-left: 1px solid white;
+    justify-content: flex-end;
 }
 
 a{
@@ -240,6 +274,8 @@ h3{
     font-size: 35px;
     text-decoration: underline;
 }
+
+/*Nastylování listu*/
 
 a li h4{
     margin: 5px;
@@ -413,7 +449,11 @@ label{
     transition: .8s;
 }
 
-/*š dodělat*/
+.inputSubmit:not(:hover){
+    background-color: white;
+    border: 1px solid black;
+    transition: .8s;
+}
 
 .popUpEffectYes, .popUpEffectNo{
     position: absolute;
@@ -421,18 +461,149 @@ label{
     font-size: 17px;
     color: white;
     pointer-events: none;
-    z-index: -1;
+    z-index: 1;
+    opacity: 0;
 }
 
 
 form:invalid .inputSubmit:hover + .popUpEffectNo{
-    z-index: 1;
+    opacity: 1;
 }
 
-form:valid .inputSubmit:hover + .popUpEffectYes{
-    z-index: 2;
+form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
+    opacity: 1;
 }
 
+/*Back to top button*/
+.backToTopBtnParent{
+    position: relative;
+    width: 250px;
+    height: 60px;
+    margin-top: 50px;
+    overflow: hidden;
+    border: 1px solid white;
+}
+
+.backToTopBtnDiv{
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.backToTopBtn{
+    font-family: 'Raleway', sans-serif;
+    font-size: 17px;
+    background-color: white;
+    color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+}
+
+.backToTopBtnSpan{
+    width: 250px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 60px;
+}
+
+.topArrowSpan{
+    position:absolute;
+    color: white;
+    background-color: black;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    
+}
+
+.backToTopBtnParent:hover > .backToTopBtnDiv{
+    top: -60px;
+    transition: .5s;
+}
+
+.backToTopBtnParent:hover > .backToTopBtnSpan{
+    top: 0px;
+    transition: .5s;
+}
+
+.backToTopBtnParent:not(:hover) > .backToTopBtnDiv{
+    top: 0px;
+    transition: .5s;
+}
+
+.backToTopBtnParent:not(:hover) > .backToTopBtnSpan{
+    top: 60px;
+    transition: .5s;
+}
+
+
+#contentDivOtherPages{
+    flex-direction: column;
+    width: 100%;
+}
+#contentTextOtherPages{
+    width: 100%;
+    text-align: center;
+}
+#contentPicOtherPages{
+    width: 100%;
+}
+
+.mainHeaderOtherPages:hover > .contentOtherPagesArrow{
+    padding:10px;
+    transition: .4s;
+}
+
+.mainHeaderOtherPages:not(:hover) > .contentOtherPagesArrow{
+    padding:0px;
+    transition: .4s;
+}
+
+/*Swiper.js*/
+.swiper-container {
+    width: 80%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .swiper-slide img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    font-size: 24px;
+    color: #333;
+    top: var(--swiper-navigation-top-offset);
+  }
+  
+.imgInSwiper{
+    width: 640px;
+    height: 430px;
+}
 
 /*MEDIA QUERIES*/
 

@@ -85,3 +85,19 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 });
+
+
+
+//Vyhodnocení validity formuláře
+
+document.addEventListener("DOMContentLoaded", function(){
+  const form = document.getElementById("myForm");
+
+  form.addEventListener("submit", function(event){
+    if(form.checkValidity()){
+      alert("Vaše odpověď byla zpracována, děkujeme.")
+    }
+  });
+
+});
+
