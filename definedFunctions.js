@@ -101,3 +101,40 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 
+
+//funkce pro galerii
+
+function doleva(){
+    const elementWithFirstClass = document.querySelector(".gallery");
+    const secondClass = elementWithFirstClass.classList[1];
+    const lastCharacter = parseInt(secondClass.charAt(secondClass.length - 1));
+
+    const left = document.querySelector(".leftGalleryArrow");
+
+    if(lastCharacter == "1"){
+      
+      return;
+    }
+
+    elementWithFirstClass.classList.remove(secondClass);
+    elementWithFirstClass.classList.add("photoPosition" + (lastCharacter - 1));
+    
+}
+
+function doprava(){
+    const elementWithFirstClass = document.querySelector(".gallery");
+    const secondClass = elementWithFirstClass.classList[1];
+    const lastCharacter = parseInt(secondClass.charAt(secondClass.length - 1));
+
+    const right = document.querySelector(".rightGalleryArrow");
+
+    if(lastCharacter == "4"){
+
+      return;
+    }
+
+
+      elementWithFirstClass.classList.remove(secondClass);
+      elementWithFirstClass.classList.add("photoPosition" + (lastCharacter + 1));
+    
+}

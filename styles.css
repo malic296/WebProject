@@ -575,34 +575,96 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
     transition: .4s;
 }
 
-/*Swiper.js*/
-.swiper-container {
-    width: 80%; 
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .swiper-slide {
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .swiper-slide img {
-    max-width: 100%;
-    max-height: 100%;
-  }
-  
-  .swiper-button-next, .swiper-button-prev {
-    font-size: 24px;
-    color: #333;
-    top: var(--swiper-navigation-top-offset);
-  }
-  
-.imgInSwiper{
+/*Gallery*/
+.galleryDiv{
+    position: relative;
     width: 640px;
-    height: 430px;
+    height: 435px;
+    box-shadow: 0 0 30px 5px rgba(0, 115, 107, 0.9);
+  
+}
+
+.photoPosition1{
+    right: -2245px;
+}
+
+.photoPosition2{
+    right: -1605px;
+}
+
+.photoPosition3{
+    right: -960px;
+}
+
+.photoPosition4{
+    right: -315px;
+}
+
+.gallery{
+    width: 3200px;
+    position: absolute;
+    height: 435px;
+    transition: .5s;
+   
+    
+    
+}
+
+.leftGalleryArrow{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 45%;
+    padding: 15px 20px;
+    position: absolute;
+    z-index: 3;
+    left: -100px;
+    top: 40%;
+    font-size: xx-large;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+.rightGalleryArrow{
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    border-radius: 45%;
+    padding: 15px 20px;
+    position: absolute;
+    z-index: 3;
+    right: -100px;
+    top: 40%;
+    font-size: xx-large;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.galleryOverflowDiv {
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
+}
+
+
+.galleryArrows:hover{
+    color: black;
+    background-color: white;
+    transition: .5s;
+}
+
+.galleryArrows:not(:hover){
+    color: white;
+    background-color: black;
+    transition: .5s;
+}
+
+.gallery img{
+    width: 640px;
+    height: 435px;
 }
 
 /*MEDIA QUERIES*/

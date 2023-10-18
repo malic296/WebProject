@@ -6,9 +6,7 @@
     <link rel="icon" href="pictures/webIcon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="styles.css">
     <title>AI | Todays Future</title>
-    <script src="swiper.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="definedFunctions.js"></script>
 </head>
 <body>
     <header id="header" class="">
@@ -33,7 +31,7 @@
         </div>
     </header>
 
-    <main>
+    <main class = "lexicaMain">
     <div class = "content" id="content">
         <section class = "sectionForScrollingEffect opacityToOne">
             <div class="contentHeader">
@@ -65,24 +63,20 @@
                 </p>
             </div>
 
-            <div class="contentDiv" id="contentDivOtherPages">
-                <div class="contentPic" id = "contentPicOtherPages">
-                    <div class="gallery">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img class = "imgInSwiper" src="pictures/AIChatGPT.jpg" alt="Obrázek 1">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img class = "imgInSwiper" src="pictures/AIHacker.jpg" alt="Obrázek 2">
-                                </div>
-                                <!-- Add more images here -->
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                        </div>
+            <div class="galleryDiv">
+                <span class="leftGalleryArrow galleryArrows" onclick="doleva()">←</span>
+                <span class="rightGalleryArrow galleryArrows" onclick="doprava()">→</span>
+
+                <div class="galleryOverflowDiv">
+                    <div class="gallery photoPosition1">
+                            <img src="pictures/AIChatGPT.jpg" alt="sfd">
+                            <img src="pictures/AIChatGPT.jpg" alt="sfd">
+                            <img src="pictures/AIChatGPT.jpg" alt="sfd">
+                            <img src="pictures/AIChatGPT.jpg" alt="sfd">
+                                    
                     </div>
-                </div>
+                </div>         
+                
             </div>
           
         </section>
