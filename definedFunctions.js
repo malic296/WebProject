@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener("DOMContentLoaded", function(){
   const form = document.getElementById("myForm");
 
-  form.addEventListener("submit", function(event){
+  form.addEventListener("submit", function(){
     if(form.checkValidity()){
       alert("Vaše odpověď byla zpracována, děkujeme.")
     }

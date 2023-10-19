@@ -581,6 +581,8 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
     width: 640px;
     height: 435px;
     box-shadow: 0 0 30px 5px rgba(0, 115, 107, 0.9);
+    overflow: hidden;
+    margin-bottom: 20px;
   
 }
 
@@ -606,8 +608,6 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
     height: 435px;
     transition: .5s;
    
-    
-    
 }
 
 .leftGalleryArrow{
@@ -619,7 +619,7 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
     position: absolute;
     z-index: 3;
     left: -100px;
-    top: 40%;
+    top: 270px;
     font-size: xx-large;
     cursor: pointer;
     user-select: none;
@@ -635,7 +635,7 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
     position: absolute;
     z-index: 3;
     right: -100px;
-    top: 40%;
+    top: 270px;
     font-size: xx-large;
     cursor: pointer;
     user-select: none;
@@ -643,12 +643,12 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
 
 }
 
-.galleryOverflowDiv {
-    width: 100%;
-    height: 100%;
-    overflow: hidden; 
+.arrowButtons{
+    position: relative;
+    width: 640px;
+    height: 100px;
+    
 }
-
 
 .galleryArrows:hover{
     color: black;
@@ -665,6 +665,60 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
 .gallery img{
     width: 640px;
     height: 435px;
+}
+
+@media screen and (max-width: 1000px){
+    .gallery img{
+        width: 400px;
+        height: 200px;
+    }
+
+    .gallery{
+        width: 2000px;
+        position: absolute;
+        height: 200px;
+       
+    }
+    .galleryDiv{
+        width: 400px;
+        height: 200px;
+      
+    }
+
+    .arrowButtons{
+        position: relative;
+        width: 400px;
+        height: 100px;
+        
+    }
+
+    .leftGalleryArrow{
+        top: 0px;
+        left: 20px;
+        
+    
+    }
+    .rightGalleryArrow{
+        top: 0px;
+        right: 20px;
+        
+    }
+
+    .photoPosition1{
+        left: -194px;
+    }
+    
+    .photoPosition2{
+        left: -598px;
+    }
+    
+    .photoPosition3{
+        left: -1002px;
+    }
+    
+    .photoPosition4{
+        left: -1406px;
+    }
 }
 
 /*MEDIA QUERIES*/
@@ -720,6 +774,8 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
     
 }
 
+
+
 @media print{
     header{
         display: none;
@@ -741,6 +797,14 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
     }
 
     .formSection{
+        display: none;
+    }
+
+    .galleryDiv{
+        display: none;
+    }
+
+    .arrowButtons{
         display: none;
     }
 }
