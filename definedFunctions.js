@@ -19,7 +19,7 @@ function isElementInViewport(element) {
   const viewportHeight = (window.innerHeight || document.documentElement.clientHeight);
   const elementHeight = rect.bottom - rect.top;
 
-  const visibilityThreshold = 0.2; // 20% výšky
+  const visibilityThreshold = 0.8; // 80% výšky
 
   return (
       rect.top <= (viewportHeight - elementHeight * (1 - visibilityThreshold)) &&
@@ -32,7 +32,7 @@ function checkVisibility(){
     // Výběr kontrolovaných elementů
     const elementsToCheck = document.querySelectorAll('.sectionForScrollingEffect');
 
-    // Projde všechny vybrané elementy a zkontrolujte, zda jsou v viewportu aspoň ze 30%
+    // Projde všechny vybrané elementy a zkontrolujte, zda jsou v viewportu aspoň z 20%
     elementsToCheck.forEach((element) => {
       if (isElementInViewport(element)) {
         element.classList.add('opacityToOne'); 

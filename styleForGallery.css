@@ -1,0 +1,11 @@
+@media screen and (max-width: 445px){
+
+    .rightGalleryArrow{
+        right: 115px;
+    }
+
+    .leftGalleryArrow{
+        left: 115px;
+    }
+   
+}

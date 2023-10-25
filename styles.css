@@ -277,7 +277,7 @@ h3{
 
 /*Nastylování listu*/
 
-a li h4{
+.listInSection1 a h4{
     margin: 5px;
     padding: 5px;
     text-align: center;
@@ -286,6 +286,10 @@ a li h4{
     justify-content: center;
     align-items: center;
     
+}
+
+.listInSection1{
+    list-style-type: none;
 }
 
 .contentText ul{
@@ -297,7 +301,7 @@ a li{
     margin-bottom: 30px;
 }
 
-a li:hover{
+.listInSection1 a h4:hover{
     border-left: 1px solid white;
     border-right: 1px solid white;
     
@@ -744,7 +748,7 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
 @media screen and (max-width: 699px) { 
     nav{
         flex-direction: column;
-        height: 400px;
+        height: 300px;
         background-color: white;
     }
 
@@ -755,14 +759,22 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
     }
 
     .headerNahoru{
-        top: -500px;
+        top: -400px;
     }
     .contentNahoru{
-        top: -500px;
+        top: -400px;
+    }
+
+    h3{
+        font-size: 150%;
+    }
+
+    h2{
+        font-size: 150%;
     }
 
     h1{
-        font-size: 40px;
+        font-size: 240%;
     }
     .contentDiv{
         flex-direction: column;
@@ -770,8 +782,53 @@ form:valid .inputSubmit:hover + .popUpEffectNo + .popUpEffectYes{
 
     .contentText{
         text-align: center;
+        width: 100%;
+    }
+
+    .contentPic{
+        width: 90%;
+    }
+
+    *{
+        font-size: 99%;
     }
     
+    td, th{
+        padding: 5px;
+    }
+
+    .inputText{
+        font-size: 90%;
+    }
+
+    label{
+        font-size: 110%;
+    }
+
+    .inputSubmit{
+        font-size: 120%;
+    }
+
+    .backToTopBtn{
+        font-size: 120%;
+    }
+
+    .backToTopBtnDiv{
+        width: 100%;
+    }
+
+    .backToTopBtnParent{
+        width: 130px;
+    }
+
+    .backToTopBtnSpan{
+        width: 130px;
+    }
+
+    .footerDiv1, .footerDiv2, .footerDiv3{
+        padding: 5px;
+    }
+
 }
 
 
